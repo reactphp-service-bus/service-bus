@@ -13,12 +13,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Devnix\\React\\ServiceBus\\": "src/"
+            "ReactServiceBus\\ServiceBus\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Devnix\\React\\ServiceBus\\Tests\\": "tests/"
+            "ReactServiceBus\\ServiceBus\\Tests\\": "tests/"
         }
     },
     "authors": [

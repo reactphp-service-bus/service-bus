@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Devnix\React\ServiceBus;
+namespace ReactServiceBus\ServiceBus;
 
-use React\Promise\PromiseInterface;
+use React\Promise;
 
 interface ServiceBusInterface
 {
     /**
-     * @return PromiseInterface<mixed>
+     * @return Promise\PromiseInterface<mixed>
      */
-    public function dispatch(object $command): PromiseInterface;
+    public function dispatch(object $command): Promise\PromiseInterface;
 }

@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Devnix\React\ServiceBus;
+namespace ReactServiceBus\ServiceBus;
 
-use React\Promise\PromiseInterface;
+use React\Promise;
 
 interface MiddlewareInterface
 {
     /**
-     * @return PromiseInterface<mixed>
+     * @return Promise\PromiseInterface<mixed>
      */
-    public function __invoke(object $command, callable $next): PromiseInterface;
+    public function __invoke(object $command, callable $next): Promise\PromiseInterface;
 }
