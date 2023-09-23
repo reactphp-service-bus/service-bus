@@ -1,0 +1,31 @@
+{
+    "name": "react-service-bus/service-bus",
+    "description": "A promise-based service bus for ReactPHP",
+    "require": {
+        "php": "^8.1",
+        "react/promise": "^3.0",
+        "azjezz/psl": "^2.7"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.10",
+        "phpunit/phpunit": "^10.3",
+        "friendsofphp/php-cs-fixer": "^3.27",
+        "react/async": "^4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Devnix\\React\\ServiceBus\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Devnix\\React\\ServiceBus\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Pablo Largo Mohedano",
+            "email": "devnix.code@gmail.com"
+        }
+    ]
+}
