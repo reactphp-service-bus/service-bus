@@ -9,7 +9,7 @@ use React\Async;
 use React\Promise;
 use ReactServiceBus\ServiceBus;
 
-#[Framework\Attributes\CoversClass(\ReactServiceBus\ServiceBus\ServiceBus::class)]
+#[Framework\Attributes\CoversClass(ServiceBus\ServiceBus::class)]
 final class ServiceBusTest extends Framework\TestCase
 {
     public function test_all_middleware_are_executed_and_return_values_are_respected(): void
