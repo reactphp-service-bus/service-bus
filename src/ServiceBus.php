@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Devnix\React\ServiceBus;
 
-use Psl;
 use React\Promise\PromiseInterface;
+
 use function React\Promise\resolve;
 
 final class ServiceBus implements ServiceBusInterface

@@ -3,8 +3,7 @@
     "description": "A promise-based service bus for ReactPHP",
     "require": {
         "php": "^8.1",
-        "react/promise": "^3.0",
-        "azjezz/psl": "^2.7"
+        "react/promise": "^3.0"
     },
     "require-dev": {
         "phpstan/phpstan": "^1.10",

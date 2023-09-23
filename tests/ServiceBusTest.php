@@ -83,11 +83,11 @@ final class ServiceBusTest extends Framework\TestCase
         self::assertEquals('foobar', $result);
     }
 
-    public function testNoMiddlewarePerformASafeNoop(): void
+    public function test_no_middleware_perform_a_safe_noop(): void
     {
         $serviceBus = new ServiceBus();
         await($serviceBus->dispatch(new AddTaskCommand()));
 
-        self::addToAssertionCount(1);
+        $this->addToAssertionCount(1);
     }
 }
