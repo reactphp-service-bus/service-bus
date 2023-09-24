@@ -13,7 +13,6 @@ final class ExamplesTest extends Framework\TestCase
      * @param string[] $expect
      */
     #[Framework\Attributes\DataProvider('exampleFiles')]
-
     public function test_example(string $file, array $expect): void
     {
         // executes the example script using the php binary
