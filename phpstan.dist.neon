@@ -5,3 +5,10 @@ parameters:
         - tests
     editorUrl: 'phpstorm://open?file=%%file%%&line=%%line%%'
     editorUrlTitle: '%%file%%:%%line%%'
+    exceptions:
+        uncheckedExceptionClasses:
+            - PHPUnit\Framework\ExpectationFailedException
+            - Psr\Container\ContainerExceptionInterface
+        check:
+            missingCheckedExceptionInThrows: true
+            tooWideThrowType: true
