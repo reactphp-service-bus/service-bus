@@ -5,10 +5,10 @@ install:                                                              			## inst
 	composer install
 
 coding-standard-fix:                                                            ## apply automated coding standard fixes
-	PHP_CS_FIXER_IGNORE_ENV=1 ./vendor/bin/php-cs-fixer fix
+	./vendor/bin/php-cs-fixer fix
 
 coding-standard-check:                                                          ## check coding-standard compliance
-	PHP_CS_FIXER_IGNORE_ENV=1 ./vendor/bin/php-cs-fixer fix --dry-run --diff
+	./vendor/bin/php-cs-fixer fix --dry-run --diff
 
 static-analysis:                                                                ## run static analysis checks
 	./vendor/bin/phpstan analyse
